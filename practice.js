@@ -1,4 +1,4 @@
-/* 
+/*
   Once you complete a problem, refresh ./SpecRunner.html in your browser and check to see if the problem's test(s) are passing.
   Passed tests will be indicated by a green circle.
   Failed tests will be indicated by a red X.
@@ -16,9 +16,15 @@ var name = 'Tyler';
   Create a function called isTyler that accepts name as it's only parameter.
   If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 */
+function isTyler(n){
 
-//Code Here
+  if(n === "Tyler" ){
+    return true;
 
+  }
+    return false;
+
+}
 
 
 ////////// PROBLEM 2 //////////
@@ -28,6 +34,12 @@ var name = 'Tyler';
 */
 
 //Code Here
+
+
+function getName(){
+var name = prompt("whats your name?");
+return name
+}
 
 
 
@@ -41,7 +53,12 @@ var name = 'Tyler';
 */
 
 //Code Here
+function welcome(){
+  var name = getName()
+  alert('Welcome, '+ name)
+}
 
+// welcome();
 
 
 ////////// PROBLEM 4 //////////
@@ -71,7 +88,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-  
+function myName(){
+  return "Tanner";
+}
 
 
 /*
@@ -79,7 +98,9 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function newMyName(){
+ return myName();
+}
 
 
 /*
@@ -87,7 +108,7 @@ var name = 'Tyler';
 */
 
 // Code Here
-
+alert(newMyName());
 
 
 ////////// PROBLEM 7 //////////
@@ -97,7 +118,11 @@ var name = 'Tyler';
 */
 
 //Code Here
-
+function outerFn(){
+  return function(){
+    return "Tanner";
+  }
+}
 
 
 /*
@@ -106,9 +131,10 @@ var name = 'Tyler';
 
 //Code Here
 
+var innerFn = outerFn();
 
 
-/* 
+/*
   Now invoke innerFn.
 */
 
